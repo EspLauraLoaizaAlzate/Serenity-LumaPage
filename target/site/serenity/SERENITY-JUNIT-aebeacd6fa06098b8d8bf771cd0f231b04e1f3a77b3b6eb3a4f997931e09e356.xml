@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="purchase flow" skipped="0" tests="1" time="31.01" timestamp="2024-10-14 01:15:01"><testcase name="complete to purchase flow in Luma page"><error message="Could not instantiate class net.thucydides.core.webdriver.ProvidedDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class net.thucydides.core.webdriver.ProvidedDriver</error><system-err>Could not instantiate class net.thucydides.core.webdriver.ProvidedDriver&#13;
+com.uam.automation.ui.tasks.SignIn.performAs(SignIn.java:15)&#13;
+com.uam.automation.ui.stepdefinitions.PurchaseFlowStepDefinition.laura_is_signs_in_on_luma_page(PurchaseFlowStepDefinition.java:24)&#13;
+✽.Laura is signs in on Luma Page(classpath:features/Purchase_flow.feature:3)&#13;
+</system-err></testcase></testsuite>
