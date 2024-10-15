@@ -38,16 +38,9 @@ public class PurchaseFlowStepDefinition {
     @Then("{actor} finishes the purchase flow")
     public void shouldSeeCheckOutProcess(Actor actor) {
 
-        actor.attemptsTo(
-                WaitUntil.the(CheckOutProcessPage.FINISH_MESSAGE, isVisible()).forNoMoreThan(30).seconds() // Esperar el mensaje
-        );
-
-// Asegúrate de que el texto coincida con el esperado
-
-        String actualText = GetText.fromTarget(CheckOutProcessPage.FINISH_MESSAGE).answeredBy(actor);
         actor.should(
                 seeThat("The finish message",
-                        GetText.fromTarget(FINISH_MESSAGE), containsString("Checkout"))
+                        GetText.fromTarget(FINISH_MESSAGE), containsString("Thank you for your purchase!"))
         );
 
     }
